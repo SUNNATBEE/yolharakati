@@ -1,25 +1,25 @@
 // Start button clicks 
-const elStartBtn = document.querySelector(".btn__start-js");
-const elWrapperForm = document.querySelector(".wrapper__form");
+const elStartBtn = document.querySelector(".btn__start-js"); // Start btn 
+const elWrapperForm = document.querySelector(".wrapper__form"); // Wrapper form modal div
 
 // Get form elements
-const elForm = document.querySelector(".form-js");
-const elSelectLevel = document.querySelector(".form__level-js");
-const elSelectTime = document.querySelector(".form__time-js");
-const elInput = document.querySelector(".user_name");
-const userValue = document.querySelector(".user__name-value");
-const correct = document.querySelector(".gif__corect");
+const elForm = document.querySelector(".form-js"); //Form 
+const elSelectLevel = document.querySelector(".form__level-js"); //Select level
+const elSelectTime = document.querySelector(".form__time-js"); //Time
+const elInput = document.querySelector(".user_name"); //Input 
+const userValue = document.querySelector(".user__name-value"); //User value for input textContent
+const correct = document.querySelector(".gif__corect"); //gif 
 
 // Get List warappers for modal
-const elWarpperModal = document.querySelector(".object__wrapper");
-const qusetionRoads = document.querySelector(".questin__road");
-const roadList = document.querySelector(".road__list");
+const elWarpperModal = document.querySelector(".object__wrapper"); // object push
+const qusetionRoads = document.querySelector(".questin__road"); //Title qusetions
+const roadList = document.querySelector(".road__list"); //ul list
 
 // Get template
-const elTemplate = document.querySelector(".road__template").content;
+const elTemplate = document.querySelector(".road__template").content; //Template
 
 // Get modal all wrapper
-const elWrappersAllModal = document.querySelector(".wrappers__images-items");
+const elWrappersAllModal = document.querySelector(".wrappers__images-items");//img time big warapper modal div
 const startTitle = document.querySelector(".start__title");
 const gameOver = document.querySelector(".game__over");
 const gameOverPoint = document.querySelector(".game-over-point");
@@ -107,7 +107,7 @@ function time(){
 
 
 // Create array
-const titleArray = [];
+const titleArray = []; //Big array for push
 let counterAtteps = 0;
 let scoreCounter = 0;
 
@@ -154,6 +154,7 @@ function randomFunc(item) {
     // console.log(item[random].symbol_title);
 }
 // console.log(titleArray);
+
 
 // Event delegation
 roadList.addEventListener("click" , evt => {
@@ -202,4 +203,4 @@ roadList.addEventListener("click" , evt => {
     }
 })
 
-console.log(randomFunc(titleArray));
+// console.log(randomFunc(titleArray));

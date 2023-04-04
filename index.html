@@ -13,6 +13,7 @@
     <!-- Header start -->
     <header class="site-header">
         <div class="container">
+            <!-- Title start   -->
             <div class="start__title">
                 <h1 class="site-header__title  fw-bold text-center m-5 " >
                     Yol qoidasi umr foydasi
@@ -22,9 +23,12 @@
                     <button class="btn__start-js fw-bold  btn">Testga kirish</button>
                 </div>
             </div>
+
+             <!-- Title finish   -->
             
+
+             <!-- Modal form get value from users start -->
             <div class="wrapper__form mx-auto">
-                
                 <form class="form-js " autocomplete="off">
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="text-center">
@@ -54,6 +58,8 @@
                     
                 </form>
             </div>
+
+                <!-- Modal form get value from users finish -->
             
         </div>
     </header>
@@ -66,6 +72,7 @@
         <!-- Hero section start  -->
         <section class="hero-section">
             <div class="container">
+                <!-- Wrapper score and point and time start modal -->
                 <div class="wrappers__images-items ">
                     <p class="text-center fs-4 fw-bold text-light my-5">
                         Omad sizga
@@ -83,24 +90,28 @@
                         <ul class="road__list  list-unstyled d-flex flex-wrap mx-auto" >
                             
                         </ul>
-                        
                     </div>
                 </div>
+                <!-- Wrapper score and point and time finish modal -->
             </div>
         </section>
         
+
+        <!-- Game over modal  start -->
         <section class="game__over ">
             <div class="container">
                 <div class="d-flex flex-column align-items-center justify-content-center">
                     <a class="reload" href="./index.html"></a>
                     <div class="d-flex w-25 justify-content-between" >
-                        <p class="game-over-point bg-danger p-3 ms-3"></p>
-                        <p class="game-over-attempms bg-danger p-3" ></p>
+                        <p class="game-over-point w-100 bg-danger  rounded-circle p-3 "></p>
+                        <p class="game-over-attempms w-100 bg-danger rounded-circle p-3" ></p>
 
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Game over modal  finish -->
         <!-- Hero section finish  -->
 
         
@@ -114,12 +125,15 @@
         </footer>
         <!-- Footer finish -->
         
+
+        <!-- Template start -->
         <template class="road__template">
             <li class="road__item position-relative">
                 <img class="gif__corect position-absolute bottom-0 end-0" src="./images/checkmark.gif" alt="corect">
                 <img  class="road__img">
             </li>
         </template>
+        <!-- Template finish -->
         
         <script src="./js/signs.js"></script>
         <script src="./js/main.js"></script>
